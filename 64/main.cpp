@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <math.h>
 
 using namespace std;
 
@@ -17,50 +17,45 @@ public:
 
         while (i < m + n && j < n){
 
-            if (A[i] == NULL){
-
-                int k = i;
-
-                while(A[k] == NULL)
-                    k++;
-
-                if(k == m + n && j < n){
-                    while(i < m + n) {
-                        A[i] = B[j];
-                        i++;
-                        j++;
-                    }
-
-                }
-
-
-                if(A[k] <= B[j]){
-                    A[i] = A[k];
-                    A[k] = NULL;
-                    i++;
-                }
-
-                else{
+            if (A[i] == NULL) {
+                while(i < m + n) {
                     A[i] = B[j];
                     i++;
                     j++;
                 }
-
             }
 
-            else if (A[i] <= B[j]){
-                i++;
+            else if(B[j] == NULL) {
+                j++;
             }
+            else{
 
-            else {
+                int k = i;
 
-                swap(A[i], B[j]);
-                i++;
+                if(A[k] <= B[j]){
+                    i++;
+                }
+
+                else{
+                    if (j < n-1 && A[k] > B[j+1])
+                    {
+                        swap(A[k], B[j]);
+                        swap(B[j], B[j+1]);
+                    }
+                    else {
+                        swap(A[k], B[j]);
+                    }
+                    i++;
+                }
 
             }
 
             for (int i = 0; i < m + n; i++)
                 cout << A[i] << " ";
+//
+//            for(int i = 0; i < n; i++)
+//                cout << B[i] << " ";
+//
             cout << endl;
 
         }
@@ -71,13 +66,13 @@ public:
 
 int main() {
 
-    int A[] = {1, 3, 4, 6, NULL, NULL};
-    int B[] = {2, 5};
+    int A[] = {9,10,11,12,13};
+    int B[] = {4,5,6,7};
 
 
     Solution ans;
 
-    ans.mergeSortedArray(A, 4, B, 2);
+    ans.mergeSortedArray(A, 5, B, 4);
 
     return 0;
 }
