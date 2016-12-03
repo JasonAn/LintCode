@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/171_2nd.dir/main.cpp.o  -o 171_2nd 

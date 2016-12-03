@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/13_2nd.dir/main.cpp.o  -o 13_2nd 
