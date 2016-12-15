@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jason/Github/LintCode/59/main.cpp
+C:/Users/anzhe/Documents/GitHub/LintCode/59/main.cpp
 iostream
 -
 vector
+-
+algorithm
 -
 

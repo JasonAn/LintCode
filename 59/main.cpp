@@ -17,23 +17,39 @@ public:
 
         int i = 0;
 
-        int ret = nums[i] + nums[i+1] + nums[i+2];
+        int ret = nums[i] + nums[i + 1] + nums[i + 2];
+        int dis = abs(target - ret);
 
-        for (i = 0; (i+2) < nums.size(); i++) {
+        for (i = 0; (i + 2) < nums.size(); i++) {
 
             int newtarget = target - nums[i];
 
             int l = i + 1;
             int r = nums.size() - 1;
 
-            while(l < r){
-                if (abs())
+            while (l < r) {
+                int newdis = newtarget - nums[l] - nums[r];
 
-                if (abs(temp - target) <)
+                if (newdis == 0)
+                    return target;
+                else {
+                    if (abs(newdis) < dis) {
+                        ret = nums[l] + nums[r] + nums[i];
+                        dis = abs(target - ret);
+                    }
+
+                    if (newdis > 0) {
+                        l++;
+
+                    } else
+                        r--;
+                }
             }
+
         }
 
         return ret;
+    }
 };
 
 int main() {

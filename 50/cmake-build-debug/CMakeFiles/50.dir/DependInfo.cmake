@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jason/Github/Lintcode/50/main.cpp" "/home/jason/Github/Lintcode/50/cmake-build-debug/CMakeFiles/50.dir/main.cpp.o"
+  "C:/Users/anzhe/Documents/GitHub/LintCode/50/main.cpp" "C:/Users/anzhe/Documents/GitHub/LintCode/50/cmake-build-debug/CMakeFiles/50.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

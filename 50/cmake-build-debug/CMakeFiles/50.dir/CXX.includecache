@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jason/Github/Lintcode/50/main.cpp
+C:/Users/anzhe/Documents/GitHub/LintCode/50/main.cpp
 iostream
 -
-cmath
+vector
 -
 

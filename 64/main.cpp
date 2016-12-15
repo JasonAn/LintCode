@@ -13,66 +13,32 @@ public:
      */
     void mergeSortedArray(int A[], int m, int B[], int n) {
 
-        int i= 0, j = 0;
+        int i = m-1, j = n-1, k = m + n - 1;
 
-        while (i < m + n && j < n){
-
-            if (A[i] == NULL) {
-                while(i < m + n) {
-                    A[i] = B[j];
-                    i++;
-                    j++;
-                }
-            }
-
-            else if(B[j] == NULL) {
-                j++;
-            }
-            else{
-
-                int k = i;
-
-                if(A[k] <= B[j]){
-                    i++;
-                }
-
-                else{
-                    if (j < n-1 && A[k] > B[j+1])
-                    {
-                        swap(A[k], B[j]);
-                        swap(B[j], B[j+1]);
-                    }
-                    else {
-                        swap(A[k], B[j]);
-                    }
-                    i++;
-                }
-
-            }
-
-            for (int i = 0; i < m + n; i++)
-                cout << A[i] << " ";
-//
-//            for(int i = 0; i < n; i++)
-//                cout << B[i] << " ";
-//
-            cout << endl;
-
+        while(i >=0 && j >= 0) {
+            if (A[i] > B[j])
+                A[k--] = A[i--];
+            else
+                A[k--] = B[j--];
         }
 
+        while(j >=0)
+            A[k--] = B[j--];
     }
-
 };
 
 int main() {
 
-    int A[] = {9,10,11,12,13};
+    int A[9] = {9,10,11,12,13};
     int B[] = {4,5,6,7};
 
 
     Solution ans;
 
     ans.mergeSortedArray(A, 5, B, 4);
+
+    for (int i = 0; i < 9; i++)
+        cout << A[i] << " ";
 
     return 0;
 }
