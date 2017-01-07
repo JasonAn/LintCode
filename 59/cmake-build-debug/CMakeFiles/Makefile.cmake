@@ -96,10 +96,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/anzhe/AppData/Roaming/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/WindowsPaths.cmake"
   "C:/Users/anzhe/AppData/Roaming/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
+<<<<<<< Updated upstream
   "CMakeFiles/3.6.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
+=======
+  "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeSystem.cmake"
+>>>>>>> Stashed changes
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
   )
@@ -112,12 +118,20 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+<<<<<<< Updated upstream
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
   "CMakeFiles/3.6.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
+=======
+  "CMakeFiles/3.6.3/CMakeSystem.cmake"
+  "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
+>>>>>>> Stashed changes
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
