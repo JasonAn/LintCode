@@ -1,0 +1,3 @@
+/home/jason/Github/LintCode/163/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jason/Github/LintCode/163/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jason/Github/LintCode/163/cmake-build-debug/CMakeFiles/163.dir
